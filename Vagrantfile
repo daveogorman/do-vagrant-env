@@ -37,6 +37,11 @@ Vagrant.configure(2) do |config|
   config.vm.network :forwarded_port, host: 5000, guest: 5000
   ##******************************************************
 
+  ##******************* added 13/01/15 *******************
+  # Jenkins Port
+  config.vm.network :forwarded_port, host: 8080, guest: 8080
+  ##******************************************************
+
 
 
   # Disable automatic box update checking. If you disable this, then
