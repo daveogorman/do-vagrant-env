@@ -6,3 +6,8 @@ apt-get -y install mongodb-10gen
 
 echo "Install Ruby Gem Bundler"
 gem install bundler
+
+echo "Install Python PIP"
+apt-get -y install python-pip python-dev build-essential
+pip install --upgrade pip
+pip install --upgrade virtualenv

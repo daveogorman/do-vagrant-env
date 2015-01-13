@@ -32,6 +32,11 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder "apps", "/home/vagrant/apps/"
   ##******************************************************
 
+  ##******************* added 13/01/15 *******************
+  # Flask Port
+  config.vm.network :forwarded_port, host: 5000, guest: 5000
+  ##******************************************************
+
 
 
   # Disable automatic box update checking. If you disable this, then
